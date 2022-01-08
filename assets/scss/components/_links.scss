@@ -1,0 +1,30 @@
+/* Links */
+.link {
+    color: $ruddy-pink;
+    
+    &:hover {
+        color: $raisin-black;
+    }
+
+    &:active {
+        color: $platinum;
+    }
+
+
+    &-primary {
+        color: $ruddy-pink;
+    }
+
+    &-secondary {
+        color: $raisin-black;
+    }
+
+    &-light {
+        color: $light-gray;
+    }
+
+    &-dark {
+        color: $eerie-black;
+    }
+
+}
