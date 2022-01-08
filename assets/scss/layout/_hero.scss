@@ -1,0 +1,31 @@
+/* Hero section */
+
+.hero {
+    background: url(../img/post-image.jpg) center no-repeat;
+    
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+
+    &__title {
+        font-size: $xx-large;
+        font-family: $roboto;
+        font-weight: bold;
+        position: relative;
+        top: 50%;
+        bottom: 50%;
+        transform: translate(-50% -50%);
+    }
+
+    &__arrows {
+        width: fit-content;
+        transition: .3s;
+        position: relative;
+        top: 85vh;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
