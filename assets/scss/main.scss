@@ -4,13 +4,14 @@
 // Vendors
 @import 'vendors/bootstrap-5/bootstrap';
 // Base
-@import 'base/base';
 @import 'base/reset';
 @import 'base/typography';
+@import 'base/base';
 // Layout
 @import 'layout/navigation';
 @import 'layout/hero';
 @import 'layout/blog-post';
+@import 'layout/author-card';
 // Components
 @import 'components/buttons';
 @import 'components/links';

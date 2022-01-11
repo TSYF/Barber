@@ -1,0 +1,32 @@
+/* Author card */
+
+.author-card {
+    background-color: $white;
+    
+    &__img,
+    &__body {
+        margin: 4rem auto;
+    }
+
+    &__title {
+        font-family: $playfair;
+        font-weight: $black;
+        font-style: italic;
+    }
+
+    &__link {
+        font-style: italic;
+    }
+
+    >* {
+        margin: auto;
+    }
+
+    * {
+        align-items: center;
+    }
+
+    *:last-child {
+        padding-right: 0;
+    }
+}

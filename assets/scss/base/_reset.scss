@@ -2,7 +2,6 @@
 
 :root {
     box-sizing: border-box;
-    font-size: $medium;
 }
 
 *,
@@ -15,5 +14,9 @@
 }
 
 img {
-   max-width: 100%;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
 }
