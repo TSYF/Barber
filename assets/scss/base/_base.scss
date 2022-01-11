@@ -2,8 +2,13 @@
 
 :root {
     font-size: $medium;
+    color: $raisin-black;
     
     * {
         font-family: $roboto;
     }
+}
+
+main {
+    margin: 0 !important;
 }

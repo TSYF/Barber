@@ -4702,7 +4702,7 @@ textarea.form-control-lg {
 .page-link {
   position: relative;
   display: block;
-  color: #d76c69;
+  color: #121619;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -11151,12 +11151,22 @@ a {
   text-decoration: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* Base */
 :root {
   font-size: 16px;
+  color: #222323;
 }
 :root * {
   font-family: "Roboto", sans-serif;
+}
+
+main {
+  margin: 0 !important;
 }
 
 /* Navigation bar */
@@ -11213,6 +11223,7 @@ a {
 /* Author card */
 .author-card {
   background-color: #fff;
+  margin: 0;
 }
 .author-card__img, .author-card__body {
   margin: 4rem auto;
@@ -11233,6 +11244,15 @@ a {
 }
 .author-card *:last-child {
   padding-right: 0;
+}
+
+/* Pagination section */
+.pagination-section {
+  background: #e6e7e7;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Buttons */
@@ -11276,3 +11296,14 @@ button:focus {
 }
 
 /* Pagination */
+.pagination {
+  width: fit-content;
+}
+.pagination :first-child > .page-link {
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+}
+.pagination :last-child > .page-link {
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+}

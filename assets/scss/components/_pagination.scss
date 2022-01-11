@@ -1,5 +1,14 @@
 /* Pagination */
 
 .pagination {
-    
+    width: fit-content;
+
+        :first-child>.page-link {
+            border-top-left-radius: 2em;
+            border-bottom-left-radius: 2em;
+        }
+        :last-child>.page-link {
+            border-top-right-radius: 2em;
+            border-bottom-right-radius: 2em;
+        }
 }
