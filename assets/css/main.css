@@ -11174,32 +11174,47 @@ main {
   height: 10vh;
 }
 .navbar-brand {
-  height: 7vh;
+  height: 6vh;
+}
+.navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl, .navbar .container-xxl {
+  padding-left: 6vw;
+  padding-right: 10vw;
 }
 
 /* Hero section */
 .hero {
   background: url(../img/post-image.jpg) center no-repeat;
+  position: relative;
   background-size: cover;
   height: 100vh;
   text-align: center;
-  position: relative;
 }
 .hero__title {
   font-size: 70px;
   font-family: "Playfair Display", "Roboto", serif;
   font-weight: 900;
-  position: relative;
   display: inline-block;
   width: 40%;
-  top: 25%;
-  transform: translateY(-25%);
+  margin-top: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 576px) {
+  .hero__title {
+    font-size: 30px;
+  }
 }
 .hero__arrows {
   width: fit-content;
   transition: 0.3s;
-  position: relative;
-  top: 75%;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  /*        margin-top: auto;
+         margin-bottom: 1rem;
+  */
 }
 .hero__arrows:hover {
   opacity: 0.5;
@@ -11236,6 +11251,9 @@ main {
 .author-card__link {
   font-style: italic;
 }
+.author-card__text {
+  font-size: 14;
+}
 .author-card > * {
   margin: auto;
 }
@@ -11249,10 +11267,21 @@ main {
 /* Pagination section */
 .pagination-section {
   background: #e6e7e7;
-  padding: 3rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 15vh;
+}
+
+/* Footer */
+.footer {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__logo {
+  height: 40%;
 }
 
 /* Buttons */

@@ -3,28 +3,37 @@
 .hero {
     background: url(../img/post-image.jpg) center no-repeat;
     
+    position: relative;
     background-size: cover;
     height: 100vh;
     text-align: center;
-    position: relative;
 
     &__title {
         font-size: $xx-large;
         font-family: $playfair;
         font-weight: $black;
-        position: relative;
         display: inline-block;
         width: 40%;
-        top: 25%;
-        transform: translateY(-25%);
+        margin-top: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media screen and (max-width: map-get($grid-breakpoints, sm)) {
+           font-size: $x-large;
+        }
     }
 
     &__arrows {
         width: fit-content;
         transition: .3s;
-        position: relative;
-        top: 75%;
-
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+ /*        margin-top: auto;
+        margin-bottom: 1rem;
+ */
         &:hover {
             opacity: 0.5;
         }
